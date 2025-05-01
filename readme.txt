@@ -1,1 +1,3 @@
-docker run --platform=linux/amd64 -p 8080:8080 -e AzureWebJobsStorage="DefaultEndpointsProtocol=https;AccountName=riactrgause8c2f;AccountKey=LJqcFN87lxEuqFRmDQdHwzMafMZpuF9/Wba6jtqmgJTRMBNeNRcuqbx+/ABNHKGo0DTSj4T7ZlMQ+ASt2v23IQ==;EndpointSuffix=core.windows.net" -t pdfconvertor:1.0 
+docker run --platform=linux/amd64 -p 8080:8080 -e AzureWebJobsStorage="" -t pdfconvertor:1.0 
+
+docker run -d --platform=linux/amd64 -p 8080:80  --name pdfconverter-run pdfconvertor:1.0
