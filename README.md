@@ -101,7 +101,7 @@ This method uses the Azure Functions Core Tools to run the function directly on 
 3.  Set the request type to `POST`.
 4.  Set the URL to `http://localhost:8080/convert`.
 5.  Go to the **Body** tab.
-6.  Select the `form-data` option.
+6.  Select the `form-data` option and add Key as "file" and select file type for value instead of text and upload file.
 
 ### Testing with Postman (Docker Container)
 
